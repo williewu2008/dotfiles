@@ -1,0 +1,17 @@
+# 排除所有暫存與備份檔
+**/*.bak*
+**/*.tmp
+**/*.log
+
+# 排除資料庫與快取
+**/*.sqlite*
+**/*.db
+**/cache/**
+**/__pycache__/**
+
+# 排除敏感身分驗證與 Token（嚴格禁止上傳）
+dot_codex/auth.json
+dot_codex/.sandbox-secrets
+dot_gemini/antigravity/conversations/**
+dot_gemini/antigravity/brain/**
+**/dot_git/**
